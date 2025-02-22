@@ -1,0 +1,6 @@
+# Create Key Vault
+az keyvault create --name proj-kv --resource-group prod-rg \
+    --enable-rbac-authorization true
+
+# Enable managed identity
+az webapp identity assign --name webapp1 --resource-group prod-rg
