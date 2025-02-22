@@ -1,0 +1,6 @@
+# Create Resource Group
+az group create --name prod-rg --location eastus2
+
+# Create Virtual Network
+az network vnet create --name prod-vnet --resource-group prod-rg \
+    --address-prefix 10.0.0.0/16
