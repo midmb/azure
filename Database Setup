@@ -1,0 +1,7 @@
+# Create Azure SQL Database
+az sql server create --name proj-sql --resource-group prod-rg \
+    --admin-user adminuser --admin-password "SecurePass123!"
+
+# Create Cosmos DB
+az cosmosdb create --name proj-cosmos --resource-group prod-rg \
+    --kind GlobalDocumentDB
