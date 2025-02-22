@@ -1,0 +1,7 @@
+# Create Application Insights
+az monitor app-insights component create --app proj-ai \
+    --location eastus2 --resource-group prod-rg
+
+# Create Log Analytics workspace
+az monitor log-analytics workspace create --workspace-name proj-logs \
+    --resource-group prod-rg
