@@ -1,0 +1,7 @@
+# Create AKS cluster
+az aks create --name proj-aks --resource-group prod-rg \
+    --node-count 3 --enable-managed-identity
+
+# Create App Service Plan
+az appservice plan create --name proj-asp --resource-group prod-rg \
+    --sku P1V2
